@@ -83,12 +83,23 @@
   }
 
   .hero-content .video-container {
-    max-width: 345px;
+    max-width: 600px; /* Increase the maximum width */
   }
 
   .hero-content .video-container iframe {
     width: 100%;
-    height: auto;
+    height: 450px; /* Increase the height */
+  }
+
+  /* CSS to hide the Pinterest overlay */
+  .hero-content .video-container iframe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent; /* Transparent overlay to prevent interaction */
   }
 </style>
 
@@ -104,7 +115,7 @@
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
         <div class="video-container">
-          <iframe src="https://assets.pinterest.com/ext/embed.html?id=825636544209034246" height="295" width="345" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://assets.pinterest.com/ext/embed.html?id=825636544209034246" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
