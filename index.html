@@ -83,25 +83,16 @@
   }
 
   .hero-content .video-container {
-    position: relative;
-    width: 600px; /* Set the width to 600px */
-    height: 438px; /* Set the height to 438px */
-  }
-
-  .hero-content .video-container iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* CSS to hide the Pinterest overlay */
-  .hero-content .video-container::after {
-    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10%;
+    right: 5%;
+    width: 600px;
+    height: 438px;
+  }
+
+  .hero-content .video-container video {
     width: 100%;
     height: 100%;
-    background: transparent; /* Transparent overlay to prevent interaction */
   }
 </style>
 
@@ -113,16 +104,19 @@
         <!--<p class="display-6 color-d">Hello, world!</p>-->
         <div>
           <h1 class="hero-title mb-4">I am Priya Chimancode</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items=" Data Analyst, Power BI Expert, Freelancer, Python Developer"></span></p>
+          <p class="hero-subtitle"><span class="typed" data-typed-items=" Data Analyst, Power BI Expert , Freelancer, Python Developer"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
         <div class="video-container">
-          <iframe src="https://assets.pinterest.com/ext/embed.html?id=825636544209034246" frameborder="0" scrolling="no"></iframe>
+          <video src="assets/img/1085850863-preview.mp4" controls loop autoplay muted></video>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
 
 
 <!-- End Hero Section -->
