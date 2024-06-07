@@ -75,9 +75,25 @@
 
   <!-- ======= Hero Section ======= -->
 
-   <style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section with Video Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
         .bg-video {
             position: relative;
+            height: 100vh;
+            width: 100%;
             overflow: hidden;
         }
 
@@ -91,6 +107,7 @@
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
+            filter: blur(5px); /* Apply blur to the video */
         }
 
         .overlay-itro {
@@ -145,13 +162,15 @@
                 <div class="container">
                     <!--<p class="display-6 color-d">Hello, world!</p>-->
                     <h1 class="hero-title mb-4">I am Priya Chimancode</h1>
-                    <p class="hero-subtitle"><span class="typed" data-typed-items=" Data Analyst, Power BI Expert , Freelancer, Python Developer"></span></p>
+                    <p class="hero-subtitle"><span class="typed" data-typed-items="Data Analyst, Power BI Expert, Freelancer, Python Developer"></span></p>
                     <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
                 </div>
             </div>
         </div>
     </div>
-    
+</body>
+</html>
+
 
 
 <!-- End Hero Section -->
