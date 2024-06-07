@@ -75,9 +75,18 @@
 
   <!-- ======= Hero Section ======= -->
 
-   <style>
+ <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
         .bg-video {
             position: relative;
+            height: 100vh;
+            width: 100%;
             overflow: hidden;
         }
 
@@ -91,6 +100,7 @@
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
+            filter: blur(3px); /* Apply blur to the video */
         }
 
         .overlay-itro {
@@ -132,6 +142,8 @@
             font-size: 24px;
         }
     </style>
+       
+        
 </head>
 <body>
     <div id="hero" class="hero route bg-video">
