@@ -94,8 +94,8 @@
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+  <!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
   <div class="container">
 
     <div class="row gy-4">
@@ -132,7 +132,7 @@
           </ul>
         </div>
         <div class="portfolio-description">
-          <h2>Project details</h2>
+          <h3>Project details</h3>
           <p>
             Developed a comprehensive tool to enable voice control of the Curio robot utilizing ReactJS for the front-end, NodeJS for the back-end, and integrated Natural Language Processing and Automatic Speech Recognition technologies. This project involved creating a seamless user interface for voice commands and processing these commands to perform various robot functions. The tool enhanced the robot's interactivity, providing a hands-free control experience for users.
           </p>
@@ -156,7 +156,29 @@
     aspect-ratio: 16/9;
     overflow: hidden;
   }
+
+  .portfolio-info,
+  .portfolio-description {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .portfolio-info {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-info ul, .portfolio-description p {
+    margin: 0;
+  }
 </style>
+
 
 <!-- End Portfolio Details Section -->
 
