@@ -96,53 +96,69 @@
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+  <div class="container">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/work-1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Project overview.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Curio.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <img src="assets/img/work-1.png" alt="" class="img-fluid">
             </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Project overview.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Curio.png" alt="" class="img-fluid">
+            </div>
+
           </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Python </li>
-                <li><strong>Institute</strong>: University of Glasgow</li>
-                <li><strong>Project date</strong>: 18 September, 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://youtu.be/bdlzn9TVa_s?si=GlIONMRpHvPXlyGv">Demo</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Project details</h2>
-              <p>
-               Developed a comprehensive tool to enable voice control of the Curio robot utilizing ReactJS for the front-end, NodeJS for the back-end, and integrated Natural Language Processing and Automatic Speech Recognition technologies. This project involved creating a seamless user interface for voice commands and processing these commands to perform various robot functions. The tool enhanced the robot's interactivity, providing a hands-free control experience for users.
-              </p>
-            </div>
-          </div>
-
+          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>Project information</h3>
+          <ul>
+            <li><strong>Category</strong>: Python </li>
+            <li><strong>Institute</strong>: University of Glasgow</li>
+            <li><strong>Project date</strong>: 18 September, 2023</li>
+            <li><strong>Project URL</strong>: <a href="https://youtu.be/bdlzn9TVa_s?si=GlIONMRpHvPXlyGv">Demo</a></li>
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h2>Project details</h2>
+          <p>
+            Developed a comprehensive tool to enable voice control of the Curio robot utilizing ReactJS for the front-end, NodeJS for the back-end, and integrated Natural Language Processing and Automatic Speech Recognition technologies. This project involved creating a seamless user interface for voice commands and processing these commands to perform various robot functions. The tool enhanced the robot's interactivity, providing a hands-free control experience for users.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .portfolio-details-slider .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .portfolio-details-slider {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+</style>
+
+<!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
