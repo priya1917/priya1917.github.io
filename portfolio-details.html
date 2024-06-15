@@ -22,13 +22,58 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .portfolio-details-slider .swiper-slide img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .portfolio-details-slider {
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+
+    .portfolio-info {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-info h3 {
+      margin-bottom: 15px;
+    }
+
+    .portfolio-info ul, .portfolio-info p {
+      margin: 0;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .menu {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .menu button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 
 <body>
@@ -38,39 +83,18 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo"><a href="index.html">DevFolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-<nav id="navbar" class="navbar">
-  <ul>
-    <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-    <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-    <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-    <li><a class="nav-link scrollto" href="index.html#work">Work</a></li>
-    <li><a class="nav-link scrollto" href="index.html#blog">Blog</a></li>
-    <!--
-    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-      <ul>
-        <li><a href="#">Drop Down 1</a></li>
-        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-          <ul>
-            <li><a href="#">Deep Drop Down 1</a></li>
-            <li><a href="#">Deep Drop Down 2</a></li>
-            <li><a href="#">Deep Drop Down 3</a></li>
-            <li><a href="#">Deep Drop Down 4</a></li>
-            <li><a href="#">Deep Drop Down 5</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Drop Down 2</a></li>
-        <li><a href="#">Drop Down 3</a></li>
-        <li><a href="#">Drop Down 4</a></li>
-      </ul>
-    </li>
-    -->
-    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-  </ul>
-  <i class="bi bi-list mobile-nav-toggle"></i>
-</nav><!-- .navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#work">Work</a></li>
+          <li><a class="nav-link scrollto" href="index.html#blog">Blog</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -93,91 +117,217 @@
   </div>
 
   <main id="main">
-
-  <!-- ======= Portfolio Details Section ======= -->
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/work-1.png" alt="" class="img-fluid">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/Project overview.png" alt="" class="img-fluid">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/Curio.png" alt="" class="img-fluid">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Project information</h3>
-          <ul>
-            <li><strong>Category</strong>: Python </li>
-            <li><strong>Institute</strong>: University of Glasgow</li>
-            <li><strong>Project date</strong>: 18 September, 2023</li>
-            <li><strong>Project URL</strong>: <a href="https://youtu.be/bdlzn9TVa_s?si=GlIONMRpHvPXlyGv">Demo</a></li>
-          </ul>
-        </div>
-        <div class="portfolio-info">
-          <h3>Project details</h3>
-          <p>
-            Developed a comprehensive tool to enable voice control of the Curio robot utilizing ReactJS for the front-end, NodeJS for the back-end, and integrated Natural Language Processing and Automatic Speech Recognition technologies. This project involved creating a seamless user interface for voice commands and processing these commands to perform various robot functions. The tool enhanced the robot's interactivity, providing a hands-free control experience for users.
-          </p>
-        </div>
-      </div>
-
+    <div class="menu">
+      <button onclick="showSection('section1')">Curio Voice Controller</button>
+      <button onclick="showSection('section2')">Twitter Sentiment Analysis</button>
+      <button onclick="showSection('section3')">Ecommerce Sales Dashboard</button>
+      <button onclick="showSection('section4')">Data Professional Survey</button>
+      <button onclick="showSection('section5')">Bank Dashboard</button>
+      <button onclick="showSection('section6')">Corporate Dashboard</button>
     </div>
 
-  </div>
-</section>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-<style>
-  .portfolio-details-slider .swiper-slide img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
+        <div id="section1" class="section">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-1.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Project overview.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/Curio.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Python</li>
+                  <li><strong>Institute</strong>: University of Glasgow</li>
+                  <li><strong>Project date</strong>: 18 September, 2023</li>
+                  <li><strong>Project URL</strong>: <a href="https://youtu.be/bdlzn9TVa_s?si=GlIONMRpHvPXlyGv">Demo</a></li>
+                </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Project details</h3>
+                <p>
+                  Developed a comprehensive tool to enable voice control of the Curio robot utilizing ReactJS for the front-end, NodeJS for the back-end, and integrated Natural Language Processing and Automatic Speech Recognition technologies. This project involved creating a seamless user interface for voice commands and processing these commands to perform various robot functions. The tool enhanced the robot's interactivity, providing a hands-free control experience for users.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .portfolio-details-slider {
-    aspect-ratio: 16/9;
-    overflow: hidden;
-  }
+        <div id="section2" class="section">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Python</li>
+                  <li><strong>Project date</strong>: 7 May, 2021</li>
+                </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Project details</h3>
+                <p>
+                  Performed a comparative study of various models for sentiment analysis on Twitter data. The study aimed at better understanding and implementation of NLP and deep learning models.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .portfolio-info {
-    background: rgba(255, 255, 255, 0.8); /* Subtle transparency */
-    padding: 20px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+        <div id="section3" class="section">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Data Analysis</li>
+                  <li><strong>Project date</strong>: 2 June, 2023</li>
+                </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Project details</h3>
+                <p>
+                  Proficiently implemented Power BI to visualize and analyze sales trends by regions in the United States. Used data cleaning and multiple DAX queries for the implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .portfolio-info h3 {
-    margin-bottom: 15px;
-  }
+        <div id="section4" class="section">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-4.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/DP-1.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/DP-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Power BI</li>
+                  <li><strong>Client</strong>: Personal Project</li>
+                  <li><strong>Project date</strong>: 13 June, 2023</li>
+                  <li><strong>Project URL</strong>: <a href="https://github.com/priya1917/Ecommerce_Dashboard">Report</a></li>
+                </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Project details</h3>
+                <p>
+                  Conducted an in-depth analysis of global data professionals' survey data, utilizing MS Excel and Power BI for insightful visualizations of participant demographics. This project serves as a valuable tool for analyzing employee feedback in large organizations, providing clear and actionable insights.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .portfolio-info ul, .portfolio-info p {
-    margin: 0;
-  }
-</style>
+        <div id="section5" class="section">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Data Analysis</li>
+                  <li><strong>Project date</strong>: 20 May, 2024</li>
+                </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Project details</h3>
+                <p>
+                  Developed a bank dashboard for comprehensive data analysis. Utilized Power BI to create interactive and insightful visualizations for financial data.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div id="section6" class="section">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/work-6.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Power BI</li>
+                  <li><strong>Project date</strong>: 2 June, 2024</li>
+                </ul>
+              </div>
+              <div class="portfolio-info">
+                <h3>Project details</h3>
+                <p>
+                  Created a corporate dashboard using Power BI, providing in-depth analysis and visualization of key performance indicators and business metrics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-<!-- End Portfolio Details Section -->
+      </div>
+    </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
