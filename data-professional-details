@@ -38,39 +38,18 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo"><a href="index.html">DevFolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-<nav id="navbar" class="navbar">
-  <ul>
-    <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-    <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-    <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-    <li><a class="nav-link scrollto" href="index.html#work">Work</a></li>
-    <li><a class="nav-link scrollto" href="index.html#blog">Blog</a></li>
-    <!--
-    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-      <ul>
-        <li><a href="#">Drop Down 1</a></li>
-        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-          <ul>
-            <li><a href="#">Deep Drop Down 1</a></li>
-            <li><a href="#">Deep Drop Down 2</a></li>
-            <li><a href="#">Deep Drop Down 3</a></li>
-            <li><a href="#">Deep Drop Down 4</a></li>
-            <li><a href="#">Deep Drop Down 5</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Drop Down 2</a></li>
-        <li><a href="#">Drop Down 3</a></li>
-        <li><a href="#">Drop Down 4</a></li>
-      </ul>
-    </li>
-    -->
-    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-  </ul>
-  <i class="bi bi-list mobile-nav-toggle"></i>
-</nav><!-- .navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#work">Work</a></li>
+          <li><a class="nav-link scrollto" href="index.html#blog">Blog</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -94,91 +73,86 @@
 
   <main id="main">
 
-  <!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-    <div class="row gy-4">
+        <div class="row gy-4">
 
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="swiper-slide">
-              <img src="assets/img/work-4.png" alt="" class="img-fluid">
+                <div class="swiper-slide">
+                  <img src="assets/img/work-4.png" alt="" class="img-fluid">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/DP-1.png" alt="" class="img-fluid">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/DP-2.png" alt="" class="img-fluid">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/DP-1.png" alt="" class="img-fluid">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/DP-2.png" alt="" class="img-fluid">
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Power BI</li>
+                <li><strong>Client</strong>: Personal Project</li>
+                <li><strong>Project date</strong>: 13 June, 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/priya1917/Ecommerce_Dashboard">Report</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-info">
+              <h3>Project Details</h3>
+              <p>
+                Conducted an in-depth analysis of global data professionals' survey data, utilizing MS Excel and Power BI for insightful visualizations of participant demographics.
+                This project serves as a valuable tool for analyzing employee feedback in large organizations, providing clear and actionable insights.
+              </p>
+            </div>
+          </div>
+
         </div>
+
       </div>
+    </section><!-- End Portfolio Details Section -->
 
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Project information</h3>
-          <ul>
-            <li><strong>Category</strong>: Power BI </li>
-            <li><strong>Client</strong>: Personal Porject </li>
-            <li><strong>Project date</strong>: 13 June, 2023</li>
-            <li><strong>Project URL</strong>: <a href="https://github.com/priya1917/Ecommerce_Dashboard">Report</a></li>
-          </ul>
-        </div>
-        <div class="portfolio-info">
-          <h3>Project details</h3>
-          <p>
-Conducted an in-depth analysis of global data professionals' survey data, utilizing MS Excel and Power BI for insightful visualizations of participant demographics.
-This project serves as a valuable tool for analyzing employee feedback in large organizations, providing clear and actionable insights.
+    <style>
+      .portfolio-details-slider .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
 
-          </p>
-        </div>
-      </div>
+      .portfolio-details-slider {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+      }
 
-    </div>
+      .portfolio-info {
+        background: rgba(255, 255, 255, 0.8); /* Subtle transparency */
+        padding: 20px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
 
-  </div>
-</section>
+      .portfolio-info h3 {
+        margin-bottom: 15px;
+      }
 
-<style>
-  .portfolio-details-slider .swiper-slide img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-
-  .portfolio-details-slider {
-    aspect-ratio: 16/9;
-    overflow: hidden;
-  }
-
-  .portfolio-info {
-    background: rgba(255, 255, 255, 0.8); /* Subtle transparency */
-    padding: 20px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-
-  .portfolio-info h3 {
-    margin-bottom: 15px;
-  }
-
-  .portfolio-info ul, .portfolio-info p {
-    margin: 0;
-  }
-</style>
-
-
-
-<!-- End Portfolio Details Section -->
+      .portfolio-info ul, .portfolio-info p {
+        margin: 0;
+      }
+    </style>
 
   </main><!-- End #main -->
 
@@ -190,19 +164,13 @@ This project serves as a valuable tool for analyzing employee feedback in large 
           <div class="copyright-box">
             <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
             <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
               Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
